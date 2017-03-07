@@ -27,7 +27,7 @@ primes x | x == 1 = []
 		 | x < 1 = error "WTAF"
 		 | otherwise = [y | y <- [1..x], isPrime y == True]
 		 
-aleph = 10000
+aleph = 1000000
 a = primes aleph
 m = length a
 
